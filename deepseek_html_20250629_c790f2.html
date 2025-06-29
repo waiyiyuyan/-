@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Phonics Letter Combinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .letter-section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .phonics-group {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #e8f4fc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .phonics-group:hover {
+            background-color: #d0e3f2;
+        }
+        .example {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-left: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>English Phonics Letter Combinations</h1>
+    
+    <div class="letter-section">
+        <h2 id="a">A</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('a')">a (short)</span><span class="example">cat, hat</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('a_e')">a_e</span><span class="example">cake, make</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ai')">ai</span><span class="example">rain, paint</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ay')">ay</span><span class="example">day, play</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ar')">ar</span><span class="example">car, star</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('au')">au</span><span class="example">autumn, sauce</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('aw')">aw</span><span class="example">saw, draw</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('al')">al</span><span class="example">ball, walk</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('air')">air</span><span class="example">chair, fair</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('are')">are</span><span class="example">care, share</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="b">B</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('b')">b</span><span class="example">bat, big</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('bb')">bb</span><span class="example">rabbit, bubble</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="c">C</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('c')">c (hard)</span><span class="example">cat, cot</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('c_soft')">c (soft)</span><span class="example">cent, city</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ch')">ch</span><span class="example">chip, chat</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ck')">ck</span><span class="example">back, duck</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="d">D</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('d')">d</span><span class="example">dog, dig</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('dd')">dd</span><span class="example">ladder, sudden</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('dg')">dg</span><span class="example">edge, bridge</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="e">E</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('e')">e (short)</span><span class="example">bed, pet</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('e_e')">e_e</span><span class="example">Pete, these</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ea')">ea</span><span class="example">sea, meat</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ee')">ee</span><span class="example">see, tree</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('er')">er</span><span class="example">her, fern</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ew')">ew</span><span class="example">new, few</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ey')">ey</span><span class="example">key, monkey</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ear')">ear</span><span class="example">ear, hear</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('eer')">eer</span><span class="example">deer, cheer</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="f">F</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('f')">f</span><span class="example">fan, fish</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ff')">ff</span><span class="example">off, cliff</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ph')">ph</span><span class="example">phone, graph</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="g">G</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('g')">g (hard)</span><span class="example">go, gum</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('g_soft')">g (soft)</span><span class="example">gem, giant</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('gg')">gg</span><span class="example">egg, bigger</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('gh')">gh</span><span class="example">ghost, light</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('gn')">gn</span><span class="example">gnat, sign</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="h">H</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('h')">h</span><span class="example">hat, hot</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('wh')">wh</span><span class="example">when, which</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="i">I</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('i')">i (short)</span><span class="example">sit, pin</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('i_e')">i_e</span><span class="example">kite, bike</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ie')">ie</span><span class="example">pie, tie</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('igh')">igh</span><span class="example">night, light</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ir')">ir</span><span class="example">bird, girl</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ire')">ire</span><span class="example">fire, wire</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="j">J</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('j')">j</span><span class="example">jam, jump</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('g_soft')">g (soft)</span><span class="example">gem, giant</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('dge')">dge</span><span class="example">edge, bridge</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="k">K</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('k')">k</span><span class="example">kite, kid</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ck')">ck</span><span class="example">back, duck</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('qu')">qu</span><span class="example">queen, quick</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="l">L</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('l')">l</span><span class="example">leg, lip</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ll')">ll</span><span class="example">bell, doll</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('le')">le</span><span class="example">table, apple</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="m">M</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('m')">m</span><span class="example">man, map</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('mm')">mm</span><span class="example">summer, hammer</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('mb')">mb</span><span class="example">lamb, comb</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="n">N</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('n')">n</span><span class="example">net, nap</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('nn')">nn</span><span class="example">dinner, sunny</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ng')">ng</span><span class="example">sing, ring</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('nk')">nk</span><span class="example">sink, bank</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('kn')">kn</span><span class="example">knee, know</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="o">O</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('o')">o (short)</span><span class="example">hot, dog</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('o_e')">o_e</span><span class="example">home, nose</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('oa')">oa</span><span class="example">boat, coat</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ow')">ow</span><span class="example">snow, grow</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('oi')">oi</span><span class="example">coin, oil</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('oy')">oy</span><span class="example">boy, toy</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('oo')">oo (long)</span><span class="example">moon, spoon</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('oo')">oo (short)</span><span class="example">book, foot</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ou')">ou</span><span class="example">out, loud</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ow')">ow</span><span class="example">cow, now</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('or')">or</span><span class="example">for, corn</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ore')">ore</span><span class="example">more, store</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('oar')">oar</span><span class="example">roar, board</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('our')">our</span><span class="example">four, pour</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="p">P</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('p')">p</span><span class="example">pan, pig</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('pp')">pp</span><span class="example">happy, apple</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="q">Q</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('qu')">qu</span><span class="example">queen, quick</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="r">R</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('r')">r</span><span class="example">red, run</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('rr')">rr</span><span class="example">carrot, sorry</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('wr')">wr</span><span class="example">write, wrap</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="s">S</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('s')">s</span><span class="example">sun, sit</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ss')">ss</span><span class="example">grass, dress</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('sh')">sh</span><span class="example">ship, fish</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('c_soft')">c (soft)</span><span class="example">cent, city</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="t">T</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('t')">t</span><span class="example">top, tap</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('tt')">tt</span><span class="example">letter, butter</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('th')">th (voiced)</span><span class="example">this, that</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('th_unvoiced')">th (unvoiced)</span><span class="example">think, bath</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="u">U</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('u')">u (short)</span><span class="example">cup, sun</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('u_e')">u_e</span><span class="example">cube, tune</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ue')">ue</span><span class="example">blue, clue</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ui')">ui</span><span class="example">fruit, juice</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ur')">ur</span><span class="example">fur, burn</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ure')">ure</span><span class="example">cure, pure</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="v">V</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('v')">v</span><span class="example">van, vet</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ve')">ve</span><span class="example">have, give</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="w">W</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('w')">w</span><span class="example">wet, win</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('wh')">wh</span><span class="example">when, which</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="x">X</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('x')">x</span><span class="example">box, fox</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="y">Y</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('y')">y (consonant)</span><span class="example">yes, yellow</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('y_vowel')">y (vowel)</span><span class="example">my, happy</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('ye')">ye</span><span class="example">bye, dye</span>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <h2 id="z">Z</h2>
+        <div>
+            <span class="phonics-group" onclick="speak('z')">z</span><span class="example">zoo, zip</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('zz')">zz</span><span class="example">buzz, fizz</span>
+        </div>
+        <div>
+            <span class="phonics-group" onclick="speak('s')">s</span><span class="example">has, is</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>English Phonics Letter Combinations - Click on any combination to hear its sound</p>
+    </footer>
+
+    <script>
+        // Pronunciation function
+        function speak(sound) {
+            const sounds = {
+                'a': 'æ', // cat
+                'a_e': 'eɪ', // cake
+                'ai': 'eɪ', // rain
+                'ay': 'eɪ', // day
+                'ar': 'ɑː', // car
+                'au': 'ɔː', // autumn
+                'aw': 'ɔː', // saw
+                'al': 'ɔː', // ball
+                'air': 'ɛər', // chair
+                'are': 'ɛər', // care
+                'b': 'b', // bat
+                'bb': 'b', // rabbit
+                'c': 'k', // cat
+                'c_soft': 's', // cent
+                'ch': 'tʃ', // chip
+                'ck': 'k', // back
+                'd': 'd', // dog
+                'dd': 'd', // ladder
+                'dg': 'dʒ', // edge
+                'e': 'ɛ', // bed
+                'e_e': 'iː', // Pete
+                'ea': 'iː', // sea
+                'ee': 'iː', // see
+                'er': 'ɜː', // her
+                'ew': 'juː', // new
+                'ey': 'iː', // key
+                'ear': 'ɪər', // ear
+                'eer': 'ɪər', // deer
+                'f': 'f', // fan
+                'ff': 'f', // off
+                'ph': 'f', // phone
+                'g': 'ɡ', // go
+                'g_soft': 'dʒ', // gem
+                'gg': 'ɡ', // egg
+                'gh': 'ɡ', // ghost
+                'gn': 'n', // gnat
+                'h': 'h', // hat
+                'wh': 'w', // when
+                'i': 'ɪ', // sit
+                'i_e': 'aɪ', // kite
+                'ie': 'aɪ', // pie
+                'igh': 'aɪ', // night
+                'ir': 'ɜː', // bird
+                'ire': 'aɪər', // fire
+                'j': 'dʒ', // jam
+                'k': 'k', // kite
+                'qu': 'kw', // queen
+                'l': 'l', // leg
+                'll': 'l', // bell
+                'le': 'əl', // table
+                'm': 'm', // man
+                'mm': 'm', // summer
+                'mb': 'm', // lamb
+                'n': 'n', // net
+                'nn': 'n', // dinner
+                'ng': 'ŋ', // sing
+                'nk': 'ŋk', // sink
+                'kn': 'n', // knee
+                'o': 'ɒ', // hot
+                'o_e': 'oʊ', // home
+                'oa': 'oʊ', // boat
+                'ow': 'oʊ', // snow
+                'oi': 'ɔɪ', // coin
+                'oy': 'ɔɪ', // boy
+                'oo': 'uː', // moon
+                'ou': 'aʊ', // out
+                'or': 'ɔː', // for
+                'ore': 'ɔː', // more
+                'oar': 'ɔː', // roar
+                'our': 'ɔː', // four
+                'p': 'p', // pan
+                'pp': 'p', // happy
+                'r': 'r', // red
+                'rr': 'r', // carrot
+                'wr': 'r', // write
+                's': 's', // sun
+                'ss': 's', // grass
+                'sh': 'ʃ', // ship
+                't': 't', // top
+                'tt': 't', // letter
+                'th': 'ð', // this
+                'th_unvoiced': 'θ', // think
+                'u': 'ʌ', // cup
+                'u_e': 'juː', // cube
+                'ue': 'uː', // blue
+                'ui': 'uː', // fruit
+                'ur': 'ɜː', // fur
+                'ure': 'jʊər', // cure
+                'v': 'v', // van
+                've': 'v', // have
+                'w': 'w', // wet
+                'x': 'ks', // box
+                'y': 'j', // yes
+                'y_vowel': 'i', // my
+                'ye': 'aɪ', // bye
+                'z': 'z', // zoo
+                'zz': 'z' // buzz
+            };
+
+            const utterance = new SpeechSynthesisUtterance();
+            utterance.text = sounds[sound] || sound;
+            utterance.lang = 'en-US';
+            utterance.rate = 0.8;
+            
+            // Try to use IPA pronunciation if available
+            if (sounds[sound]) {
+                utterance.text = sounds[sound];
+            } else {
+                // Fallback to letter names
+                utterance.text = sound.split('_')[0];
+            }
+            
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>
